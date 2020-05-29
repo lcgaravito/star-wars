@@ -11,3 +11,5 @@ Entrar al folder del proyecto desde la terminal y escribir:
 ```
 npm start
 ```
+El proyecto correrá localmente en la siguiente dirección:
+http://localhost:3000/
