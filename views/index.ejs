@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>
+    <h1 class="title-body">
         Star Wars API
     </h1>
     <hr class="my-4" />
@@ -17,15 +17,34 @@
             Name of the movie:
             <%= movie.title %>
         </h2>
-        <h2>Planets:</h2>
+        <h3>Planets:</h3>
         <ul>
             <% movie.planets.forEach(planet => { %>
                 <li>
-                    <%= planet %>
+                    <h4>
+                        Name:
+                        <%= planet.name %>
+                    </h4>
+                    <p>
+                        Terrain
+                        <%= planet.terrain %>
+                    </p>
+                    <p>
+                        Gravity
+                        <%= planet.gravity %>
+                    </p>
+                    <p>
+                        Diameter
+                        <%= planet.diameter %>
+                    </p>
+                    <p>
+                        Population
+                        <%= planet.population %>
+                    </p>
                 </li>
                 <% }) %>
         </ul>
-        <h2>People:</h2>
+        <h3>People:</h3>
         <ul>
             <% movie.characters.forEach(character => { %>
                 <li>
@@ -33,7 +52,7 @@
                 </li>
                 <% }) %>
         </ul>
-        <h2>Starships:</h2>
+        <h3>Starships:</h3>
         <ul>
             <% movie.starships.forEach(starship => { %>
                 <li>
