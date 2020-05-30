@@ -13,3 +13,5 @@ npm start
 ```
 El proyecto correrá localmente en la siguiente dirección:
 http://localhost:3000/
+
+![Application preview](https://raw.githubusercontent.com/lcgaravito/star-wars/master/public/images/preview.png)
